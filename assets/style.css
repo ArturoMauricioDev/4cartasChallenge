@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --gravyish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+/* *{
+    border: red 1px solid;
+} */
+
+body{
+    margin: 0 8%;
+    padding: 0;
+    background: var(--very-light-gray);
+    height: 100%;
+}
+.text--top{
+    margin-top: 16%;
+    margin-bottom: 14%;
+}
+.title--top{
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 25px;
+}
+.subtitle--top{
+    color: var(--very-dark-blue);
+    font-weight: 200;
+    font-size: 25px;
+}
+.description--top{
+    font-weight: 400;
+    color: var(--gravyish-blue);
+}
+.card{
+    border-radius: 15px;
+    box-shadow: 5px 8px 18px var(--gravyish-blue);;
+    margin-bottom: 10%;
+    background: white;
+}
+.card div{
+    margin: 10% 5% 2% 5%;
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 22px;
+}
+.card p{
+    font-weight: 400;
+    color: var(--gravyish-blue);
+    font-size: 16px;
+    margin: 0 5%;
+}
+.image {
+    margin: 10% 5% 5% 5%;
+    display: block;
+    text-align: right;
+    padding-bottom: 25px;
+}
+#supervisor{
+    border-top: var(--cyan) solid 6px;
+}
+#team-builder{
+    border-top: var(--red) solid 6px;
+}
+#karma{
+    border-top: var(--orange) solid 6px;
+}
+#calculator{
+    border-top: var(--blue) solid 6px;
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        margin: 0 8%;
+    }
+    .text--top {
+        margin: 5% 28% 4% 28%;
+    }
+    .title--top{
+        text-align: center;
+    }
+    .subtitle--top{
+        text-align: center;
+    }
+    .description--top{
+        text-align: center;
+    }
+    .cards{
+        display: flex;
+        
+    }
+    .section--left{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        margin: 0 1.2%;
+    }
+    .section--center{
+        width: 33%;
+        margin: 0 1.2%;
+    }
+    .section--right{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        margin: 0 1.2%;
+    }
+    .card div{
+        margin: 7% 5% 2% 5%;
+    }
+    .image {
+        padding-bottom: 10px;
+    }
+}
